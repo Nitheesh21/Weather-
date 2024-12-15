@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          class="city-input"
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+        />
+        <button>
+          <img class="search-icon" src="./searchIcon.png" alt="" />
+        </button>
+      </div>
+      <div class="weather">
+        <div class="weather-image">
+          <img src="./clear.png" class="weather-icon" />
+        </div>
+        <h1 class="temperature">26°C</h1>
+        <h2 class="city">Ohio</h2>
+        <div class="details">
+          <div class="col">
+            <img src="./images/humidity.png" />
+            <div>
+              <p class="humidity value">50</p>
+              <p class="unit">%</p>
+
+              <p class="entity">Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./images/wind.png" />
+            <div>
+              <p class="wind value">15</p>
+              <p class="unit">kmph</p>
+              <p class="entity">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
